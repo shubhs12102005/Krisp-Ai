@@ -1,7 +1,7 @@
 // Global constants, site metadata, and feature data for Krisp AI replica
 
 export const siteLogos = {
-  main: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/img_logo_main.svg",
+  main: "/silgate-logo.jpg",
   arrowIcon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs//home/icon_arrow.svg",
   arrowDownIcon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_arrow_down.svg",
   ctaPointer: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_cta_pointer.svg"
@@ -358,8 +358,8 @@ export const footerData = {
     ]
   },
   logo: {
-    src: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/img_logo_main.svg",
-    alt: "Krisp logo",
+    src: "/silgate-logo.jpg",
+    alt: "Silgate Solutions logo",
     href: "/"
   },
   socials: [
@@ -409,6 +409,7 @@ export const footerData = {
     {
       title: "Company",
       links: [
+        { text: "Contact Us", href: "/contact-sales" },
         { text: "Customers", href: "/customers" },
         { text: "Pricing", href: "/pricing" },
         { text: "Book a Demo", href: "/contact-sales" },
@@ -428,8 +429,10 @@ export const footerData = {
       ]
     }
   ],
-  copyright: "© 2026 Krisp Technologies, Inc. All rights reserved.",
-  address: "2150 Shattuck Ave, Penthouse 1300, Berkeley, California 94704, United States.",
+  copyright: "© 2026 Silgate Solutions. All rights reserved.",
+  address: "Road No 8, SG Barve RD, Wagle Estate, Padwal Nagar, Thane West, Maharashtra 400604",
+  email: "manoj@silgatehiring.com",
+  phone: "+91 81088 10916",
   actions: [
     { text: "Book a demo", href: "/contact-sales", isPrimary: true },
     { text: "Get Krisp for free", href: "https://app.krisp.ai/sign-up", isDark: true }

@@ -72,7 +72,7 @@ export default function Navbar() {
                 alt={navigationData.logo.alt}
                 width={navigationData.logo.width}
                 height={navigationData.logo.height}
-                className="w-[72px] h-[34px]"
+                className="h-[38px] md:h-[44px] w-auto object-contain mix-blend-multiply"
               />
             </Link>
 

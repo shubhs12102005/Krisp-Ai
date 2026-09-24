@@ -107,6 +107,8 @@ export default function App() {
           <Route path="/customers" element={<Customers />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact-sales" element={<ContactSales />} />
+          <Route path="/contact" element={<ContactSales />} />
+          <Route path="/contact-us" element={<ContactSales />} />
 
           {/* Catch-all fallback */}
           <Route path="*" element={<Navigate to="/" replace />} />

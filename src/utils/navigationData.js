@@ -4,9 +4,9 @@ import { siteLogos } from "./constants";
 export const navigationData = {
   logo: {
     src: siteLogos.main,
-    alt: "Krisp logo",
-    width: 72,
-    height: 34,
+    alt: "Silgate Solutions logo",
+    width: 140,
+    height: 58,
     href: "/"
   },
 

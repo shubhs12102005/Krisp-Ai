@@ -26,24 +26,77 @@ export default function ContactSales() {
     <div className="py-20 md:py-28 bg-[#fafafb]">
       <div className="krisp-container">
         <div className="max-w-[850px] mx-auto bg-white rounded-[24px] p-8 md:p-14 shadow-lg border border-[#e7e7ea]">
-          <div className="text-center max-w-[600px] mx-auto mb-10">
+          <div className="text-center max-w-[650px] mx-auto mb-10">
+            <div className="flex justify-center mb-4">
+              <img
+                src="/silgate-logo.jpg"
+                alt="Silgate Solutions"
+                className="h-[52px] w-auto object-contain mix-blend-multiply"
+              />
+            </div>
             <h1 className="text-[34px] md:text-[44px] font-bold text-[#131032] mb-3">
-              Book a <span className="gradient-purple">Demo</span>
+              Contact <span className="gradient-purple">Silgate Solutions</span>
             </h1>
             <p className="text-[16px] md:text-[18px] text-[#525069]">
-              See how Krisp Voice AI can transform meeting productivity, eliminate background noise, and automate summaries across your team.
+              Reach our team directly or request a demo of our Voice AI, Noise Cancellation, and Contact Center technologies.
             </p>
+          </div>
+
+          {/* Direct Contact Details Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 p-6 rounded-[20px] bg-gradient-to-br from-[#f8fafc] to-[#f1f5f9] border border-[#e2e8f0]">
+            <a
+              href="mailto:manoj@silgatehiring.com"
+              className="flex items-start gap-3 p-3.5 rounded-[12px] bg-white border border-[#e2e8f0] hover:border-[#614efa] transition-all group shadow-xs"
+            >
+              <div className="w-10 h-10 rounded-[10px] bg-[#614efa]/10 flex items-center justify-center text-[#614efa] text-[18px] flex-shrink-0 group-hover:scale-105 transition-transform">
+                ✉
+              </div>
+              <div className="min-w-0">
+                <div className="text-[12px] font-bold text-[#614efa] uppercase tracking-wider mb-0.5">Email Us</div>
+                <div className="text-[14px] font-semibold text-[#131032] group-hover:text-[#614efa] break-all">
+                  manoj@silgatehiring.com
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="tel:+918108810916"
+              className="flex items-start gap-3 p-3.5 rounded-[12px] bg-white border border-[#e2e8f0] hover:border-[#614efa] transition-all group shadow-xs"
+            >
+              <div className="w-10 h-10 rounded-[10px] bg-[#614efa]/10 flex items-center justify-center text-[#614efa] text-[18px] flex-shrink-0 group-hover:scale-105 transition-transform">
+                📞
+              </div>
+              <div>
+                <div className="text-[12px] font-bold text-[#614efa] uppercase tracking-wider mb-0.5">Call Us</div>
+                <div className="text-[14px] font-semibold text-[#131032] group-hover:text-[#614efa]">
+                  +91 81088 10916
+                </div>
+              </div>
+            </a>
+
+            <div className="flex items-start gap-3 p-3.5 rounded-[12px] bg-white border border-[#e2e8f0] shadow-xs">
+              <div className="w-10 h-10 rounded-[10px] bg-[#614efa]/10 flex items-center justify-center text-[#614efa] text-[18px] flex-shrink-0">
+                📍
+              </div>
+              <div>
+                <div className="text-[12px] font-bold text-[#614efa] uppercase tracking-wider mb-0.5">Office Address</div>
+                <p className="text-[13px] text-[#525069] leading-snug">
+                  Road No 8, SG Barve RD, Wagle Estate, Padwal Nagar, Thane West, Maharashtra 400604
+                </p>
+              </div>
+            </div>
           </div>
 
           {submitted ? (
             <div className="bg-[#e8faf6] border border-[#cef4ec] rounded-[16px] p-8 text-center text-[#008065]">
               <div className="text-[24px] font-bold mb-2">Thank you!</div>
               <p className="text-[16px]">
-                Your demo request has been received. A Krisp product specialist will reach out within 24 business hours to schedule your tailored live walkthrough.
+                Your message has been received. A Silgate Solutions representative will reach out within 24 business hours to assist you.
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
+
+          <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-[14px] font-semibold text-[#1a1a22] mb-2">

@@ -24,9 +24,9 @@ export default function Footer() {
               <img
                 src={logo.src}
                 alt={logo.alt}
-                width="72"
-                height="34"
-                className="w-[72px] h-[34px]"
+                width="140"
+                height="58"
+                className="h-[44px] md:h-[50px] w-auto object-contain mix-blend-multiply"
               />
             </Link>
 
@@ -93,8 +93,28 @@ export default function Footer() {
         {/* Bottom Info & CTAs */}
         <div className="pt-8 border-t border-[#e7e7ea] flex flex-col-reverse md:flex-row items-start md:items-center justify-between gap-6 text-[13px] md:text-[14px] text-[#525069]">
           <div>
-            <p className="leading-[22px] mb-1">{copyright}</p>
-            <p className="leading-[22px] text-[#757585]">{address}</p>
+            <p className="leading-[22px] mb-1 font-semibold text-[#1a1a22]">{copyright}</p>
+            <p className="leading-[22px] text-[#525069] flex items-start gap-1.5 mt-1 max-w-[550px]">
+              <span className="text-[#614efa] mt-0.5">📍</span>
+              <span>{address}</span>
+            </p>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-2 text-[13px] md:text-[14px]">
+              <a
+                href={`mailto:${footerData.email || 'manoj@silgatehiring.com'}`}
+                className="flex items-center gap-1.5 text-[#614efa] hover:text-[#4a3bbe] font-medium transition-colors"
+              >
+                <span>✉</span>
+                <span>{footerData.email || 'manoj@silgatehiring.com'}</span>
+              </a>
+              <span className="text-[#c4c4cc]">•</span>
+              <a
+                href={`tel:${(footerData.phone || '+91 81088 10916').replace(/\s+/g, '')}`}
+                className="flex items-center gap-1.5 text-[#614efa] hover:text-[#4a3bbe] font-medium transition-colors"
+              >
+                <span>📞</span>
+                <span>{footerData.phone || '+91 81088 10916'}</span>
+              </a>
+            </div>
           </div>
 
           <div className="flex flex-wrap items-center gap-3 w-full md:w-auto">
