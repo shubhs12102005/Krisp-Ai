@@ -3,9 +3,14 @@ import { Link, useLocation } from "react-router-dom";
 import MegaMenu from "./MegaMenu";
 import MobileMenu from "./MobileMenu";
 import Button from "../common/Button";
-import { navigationModel } from "../../models/navigationModel";
-import { useNavigationController } from "../../controllers/navigationController";
+import { navigationData } from "../../utils/navigationData";
+import { siteLogos } from "../../utils/constants";
+import { useNavigation } from "../../hooks/useNavigation";
 
+/**
+ * Universal Krisp Header Navbar.
+ * Includes interactive mega-menus for AI Meeting Assistant, Call Center AI, and Developers.
+ */
 export default function Navbar() {
   const {
     activeDropdown,
@@ -19,22 +24,22 @@ export default function Navbar() {
     getKrispDropdownOpen,
     setGetKrispDropdownOpen,
     scrolled
-  } = useNavigationController();
+  } = useNavigation();
 
-  const navRef = useRef(null);
+  const containerRef = useRef(null);
   const location = useLocation();
 
-  // Close menus on route change
+  // Reset dropdowns upon route changes
   useEffect(() => {
     closeDropdown();
     closeMobileMenu();
     setGetKrispDropdownOpen(false);
   }, [location.pathname]);
 
-  // Click outside to close getKrispDropdown
+  // Click outside listener for MegaMenu and Get Krisp popup
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (navRef.current && !navRef.current.contains(e.target)) {
+      if (containerRef.current && !containerRef.current.contains(e.target)) {
         closeDropdown();
         setGetKrispDropdownOpen(false);
       }
@@ -43,14 +48,17 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const activeItem = navigationModel.menuItems.find(
-    (item) => item.id === activeDropdown
-  );
+  const navItems = [
+    navigationData.aiMeetingAssistant,
+    navigationData.callCenterAI,
+    navigationData.developers,
+    navigationData.customers,
+    navigationData.pricing
+  ];
 
   return (
-    <>
+    <div ref={containerRef}>
       <header
-        ref={navRef}
         className={`fixed top-0 left-0 w-full h-[73px] z-[9998] transition-all duration-200 border-b border-[#f4f4f5] flex items-center ${
           scrolled ? "bg-white/95 backdrop-blur-[45px] shadow-xs" : "bg-white/90 backdrop-blur-[45px]"
         }`}
@@ -60,10 +68,10 @@ export default function Navbar() {
             {/* Logo */}
             <Link to="/" className="flex items-center flex-shrink-0">
               <img
-                src={navigationModel.logo.src}
-                alt={navigationModel.logo.alt}
-                width={navigationModel.logo.width}
-                height={navigationModel.logo.height}
+                src={navigationData.logo.src}
+                alt={navigationData.logo.alt}
+                width={navigationData.logo.width}
+                height={navigationData.logo.height}
                 className="w-[72px] h-[34px]"
               />
             </Link>
@@ -71,7 +79,7 @@ export default function Navbar() {
             {/* Desktop Navigation Items */}
             <nav className="hidden lg:block">
               <ul className="flex items-center space-x-1">
-                {navigationModel.menuItems.map((item) => (
+                {navItems.map((item) => (
                   <li
                     key={item.id}
                     className="relative px-2 py-1"
@@ -82,7 +90,7 @@ export default function Navbar() {
                         onClick={() =>
                           activeDropdown === item.id ? closeDropdown() : openDropdown(item.id)
                         }
-                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-[8px] text-[14px] leading-[20px] font-medium transition-colors ${
+                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-[8px] text-[14px] leading-[20px] font-medium transition-colors cursor-pointer ${
                           activeDropdown === item.id
                             ? "bg-[#f4f4f5] text-[#1a1a22] font-semibold"
                             : "text-[#1a1a22] hover:bg-[#f4f4f5]"
@@ -90,7 +98,7 @@ export default function Navbar() {
                       >
                         <span>{item.title}</span>
                         <img
-                          src="https://krisp.ai/wp-content/themes/krisp-v4/imgs//home/icon_arrow.svg"
+                          src={siteLogos.arrowIcon}
                           alt="Arrow"
                           className={`w-3 h-3 transition-transform duration-200 ${
                             activeDropdown === item.id ? "rotate-180" : ""
@@ -111,22 +119,22 @@ export default function Navbar() {
             </nav>
           </div>
 
-          {/* Right Actions */}
+          {/* Right Header Actions */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href={navigationModel.actions.signIn.href}
+              href={navigationData.actions.signIn.href}
               className="text-[14px] font-semibold text-[#1a1a22] hover:underline"
             >
-              {navigationModel.actions.signIn.text}
+              {navigationData.actions.signIn.text}
             </a>
 
             <div className="w-[1px] h-[26px] bg-[#e7e7ea]"></div>
 
             <Button variant="dark" href="/contact-sales">
-              {navigationModel.actions.bookDemo.text}
+              {navigationData.actions.bookDemo.text}
             </Button>
 
-            {/* Get Krisp Dropdown */}
+            {/* Get Krisp Dropdown Menu */}
             <div className="relative">
               <button
                 onClick={() => setGetKrispDropdownOpen((prev) => !prev)}
@@ -134,7 +142,7 @@ export default function Navbar() {
               >
                 <span>Get Krisp</span>
                 <img
-                  src="https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_arrow_down.svg"
+                  src={siteLogos.arrowDownIcon}
                   alt="Arrow"
                   className={`w-3.5 h-3.5 transition-transform duration-200 ${
                     getKrispDropdownOpen ? "rotate-180" : ""
@@ -143,11 +151,11 @@ export default function Navbar() {
               </button>
 
               {getKrispDropdownOpen && (
-                <div className="absolute right-0 top-[52px] w-[290px] bg-white rounded-[16px] p-2 header-dropdown-menu z-50">
-                  {navigationModel.actions.getKrispDropdown.map((drop) => (
-                    <a
+                <div className="absolute right-0 top-[52px] w-[290px] bg-white rounded-[16px] p-2 header-dropdown-menu z-50 shadow-xl border border-[#f4f4f5]">
+                  {navigationData.actions.getKrispDropdown.map((drop) => (
+                    <Link
                       key={drop.id}
-                      href={drop.href}
+                      to={drop.href}
                       onClick={() => setGetKrispDropdownOpen(false)}
                       className="flex items-start gap-3 p-3 rounded-[12px] hover:bg-[#f4f4f5] transition-colors text-left"
                     >
@@ -164,14 +172,14 @@ export default function Navbar() {
                           {drop.desc}
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
             </div>
           </div>
 
-          {/* Hamburger button for mobile/tablet */}
+          {/* Mobile Hamburger Button */}
           <div className="lg:hidden flex items-center">
             <button
               onClick={toggleMobileMenu}
@@ -201,20 +209,19 @@ export default function Navbar() {
       {/* Desktop Mega Menu Dropdown */}
       <div onMouseLeave={closeDropdown}>
         <MegaMenu
-          item={activeItem}
-          isOpen={Boolean(activeDropdown && activeItem)}
+          activeId={activeDropdown}
+          isOpen={Boolean(activeDropdown)}
           onClose={closeDropdown}
         />
       </div>
 
-      {/* Mobile Navigation Drawer */}
+      {/* Mobile Drawer */}
       <MobileMenu
         isOpen={mobileMenuOpen}
         onClose={closeMobileMenu}
-        navigationData={navigationModel}
         activeSubMenu={mobileSubMenu}
         setActiveSubMenu={setMobileSubMenu}
       />
-    </>
+    </div>
   );
 }

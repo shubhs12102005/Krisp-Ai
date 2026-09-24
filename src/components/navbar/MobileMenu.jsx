@@ -1,17 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../common/Button";
+import { navigationData } from "../../utils/navigationData";
+import { siteLogos } from "../../utils/constants";
 
+/**
+ * Mobile navigation overlay drawer with nested submenu drilldowns.
+ */
 export default function MobileMenu({
   isOpen,
   onClose,
-  navigationData,
   activeSubMenu,
   setActiveSubMenu
 }) {
   if (!isOpen) return null;
 
-  const currentSubMenu = navigationData.menuItems.find(
+  const mainCategories = [
+    navigationData.aiMeetingAssistant,
+    navigationData.callCenterAI,
+    navigationData.developers,
+    navigationData.customers,
+    navigationData.pricing
+  ];
+
+  const currentCategory = mainCategories.find(
     (item) => item.id === activeSubMenu
   );
 
@@ -19,10 +31,10 @@ export default function MobileMenu({
     <div className="fixed inset-0 top-[63px] z-[999] bg-white overflow-y-auto pb-32">
       <div className="px-6 py-6">
         {!activeSubMenu ? (
-          // Main level items
+          // Main Menu Level
           <div>
             <ul className="space-y-4">
-              {navigationData.menuItems.map((item) => (
+              {mainCategories.map((item) => (
                 <li
                   key={item.id}
                   className="flex items-center justify-between border-b border-[#f4f4f5] pb-3"
@@ -34,7 +46,7 @@ export default function MobileMenu({
                     >
                       <span>{item.title}</span>
                       <img
-                        src="https://krisp.ai/wp-content/themes/krisp-v4/imgs//home/icon_arrow.svg"
+                        src={siteLogos.arrowIcon}
                         alt="Open"
                         className="-rotate-90 w-4 h-4 opacity-60"
                       />
@@ -98,37 +110,37 @@ export default function MobileMenu({
             </div>
           </div>
         ) : (
-          // Submenu Drilldown
+          // Submenu Drilldown Level
           <div>
             <button
               onClick={() => setActiveSubMenu(null)}
               className="flex items-center gap-2 text-[#525069] text-[14px] font-semibold mb-6"
             >
               <img
-                src="https://krisp.ai/wp-content/themes/krisp-v4/imgs//home/icon_arrow.svg"
+                src={siteLogos.arrowIcon}
                 alt="Back"
                 className="rotate-90 w-4 h-4"
               />
               Back
             </button>
 
-            {currentSubMenu && (
+            {currentCategory && (
               <div>
-                <div className="bg-[#f7f7f8] rounded-[12px] p-5 mb-6">
+                <div className="bg-[#f7f7f8] rounded-[16px] p-5 mb-6">
                   <div className="text-[20px] font-bold text-[#1a1a22] mb-1">
-                    {currentSubMenu.card.title}
+                    {currentCategory.card?.title}
                   </div>
                   <div className="text-[14px] text-[#757585] mb-4">
-                    {currentSubMenu.card.desc}
+                    {currentCategory.card?.desc}
                   </div>
                   <Link
-                    to={currentSubMenu.card.href}
+                    to={currentCategory.card?.href}
                     onClick={onClose}
                     className="inline-flex items-center justify-between w-full h-[40px] px-4 rounded-[10px] border border-[#23232e] text-[#1a1a22] text-[14px] font-bold"
                   >
-                    <span>{currentSubMenu.card.buttonText}</span>
+                    <span>{currentCategory.card?.buttonText}</span>
                     <img
-                      src="https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_cta_pointer.svg"
+                      src={siteLogos.ctaPointer}
                       alt="Arrow"
                       className="w-4 h-4"
                     />
@@ -136,7 +148,7 @@ export default function MobileMenu({
                 </div>
 
                 <div className="space-y-6">
-                  {currentSubMenu.groups.map((group, idx) => (
+                  {currentCategory.groups?.map((group, idx) => (
                     <div key={idx}>
                       <div className="text-[#757585] text-[12px] font-semibold uppercase tracking-wider mb-2">
                         {group.groupTitle}

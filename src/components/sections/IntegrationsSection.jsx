@@ -1,8 +1,8 @@
 import React from "react";
-import { featureModel } from "../../models/featureModel";
+import { integrationsData } from "../../utils/constants";
 
 export default function IntegrationsSection() {
-  const { title, subtitle, rows } = featureModel.integrations;
+  const { title, subtitle, rows } = integrationsData;
 
   return (
     <section id="integrations" className="py-24 md:py-32 bg-[#fafafb] overflow-hidden">

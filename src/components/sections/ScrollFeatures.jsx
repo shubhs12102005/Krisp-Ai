@@ -1,21 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { featureModel } from "../../models/featureModel";
-import { usePageController } from "../../controllers/pageController";
+import { meetingSections, audioDemos } from "../../utils/constants";
 import AudioDemoPlayer from "./AudioDemoPlayer";
 import Button from "../common/Button";
 
+/**
+ * Interactive step-by-step section showcasing Krisp during, after, and before meetings.
+ */
 export default function ScrollFeatures() {
-  const {
-    activeStep,
-    setStep,
-    activeFeatureIndex,
-    setFeatureForStep
-  } = usePageController();
+  const [activeStep, setActiveStep] = useState("in-meeting");
+  const [activeFeatureIndex, setActiveFeatureIndex] = useState({
+    "in-meeting": 0,
+    "post-meetings": 0,
+    "pre-meetings": 0
+  });
 
-  const currentSection = featureModel.meetingSections.find(
+  const setStep = (stepId) => {
+    setActiveStep(stepId);
+  };
+
+  const setFeatureForStep = (stepId, index) => {
+    setActiveFeatureIndex((prev) => ({
+      ...prev,
+      [stepId]: index
+    }));
+  };
+
+  const currentSection = meetingSections.find(
     (sec) => sec.id === activeStep
-  ) || featureModel.meetingSections[0];
+  ) || meetingSections[0];
 
   const currentFeatureIdx = activeFeatureIndex[activeStep] || 0;
   const currentFeature = currentSection.items[currentFeatureIdx] || currentSection.items[0];
@@ -25,7 +38,7 @@ export default function ScrollFeatures() {
       {/* Sticky Step Navigation */}
       <div className="sticky top-[85px] z-30 mb-16 flex justify-center px-4 pointer-events-none">
         <div className="pointer-events-auto bg-[rgba(50,48,77,0.8)] backdrop-blur-md p-1.5 rounded-[24px] shadow-[0px_0px_20px_0px_rgba(22,19,52,0.8)] inline-flex items-center gap-1">
-          {featureModel.meetingSections.map((sec) => {
+          {meetingSections.map((sec) => {
             const isActive = activeStep === sec.id;
             return (
               <button
@@ -133,12 +146,12 @@ export default function ScrollFeatures() {
             {currentFeature.isDemo ? (
               currentFeature.demoType === "noise" ? (
                 <AudioDemoPlayer
-                  demoConfig={featureModel.audioDemos.noise}
+                  demoConfig={audioDemos.noise}
                   defaultTrack="remote-work"
                 />
               ) : (
                 <AudioDemoPlayer
-                  demoConfig={featureModel.audioDemos.accent}
+                  demoConfig={audioDemos.accent}
                   defaultTrack="manoj"
                   isAccent={true}
                 />

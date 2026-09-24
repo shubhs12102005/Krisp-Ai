@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { featureModel } from "../../models/featureModel";
+import { faqsData } from "../../utils/constants";
 
 export default function FAQSection() {
   const [openIndices, setOpenIndices] = useState({ 0: true }); // First FAQ open by default like original
@@ -21,7 +21,7 @@ export default function FAQSection() {
           </h2>
 
           <div className="divide-y divide-[#e7e7ea] border-t border-b border-[#e7e7ea]">
-            {featureModel.faqs.map((faq, idx) => {
+            {faqsData.map((faq, idx) => {
               const isOpen = Boolean(openIndices[idx]);
               return (
                 <div key={idx} className="py-5 transition-colors">

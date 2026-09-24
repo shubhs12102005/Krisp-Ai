@@ -1,8 +1,8 @@
 import React from "react";
-import { featureModel } from "../../models/featureModel";
+import { featuresBlockData } from "../../utils/constants";
 
 export default function FeaturesBlock() {
-  const { featuresBlock } = featureModel;
+  const featuresBlock = featuresBlockData;
 
   return (
     <section className="py-20 md:py-28 bg-white border-t border-b border-[#f4f4f5]">

@@ -1,10 +1,10 @@
 import React from "react";
-import { featureModel } from "../../models/featureModel";
+import { workspacesData } from "../../utils/constants";
 import Button from "../common/Button";
 
 export default function WorkspacesSection() {
   const { eyebrow, title, subtitle, content, buttonText, buttonHref, video } =
-    featureModel.workspaces;
+    workspacesData;
 
   return (
     <section id="workspaces" className="bg-[#131032] py-24 md:py-32 text-white overflow-hidden">

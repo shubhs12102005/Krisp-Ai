@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { footerModel } from "../../models/footerModel";
+import { footerData } from "../../utils/constants";
 import AwardsSection from "./AwardsSection";
 import Button from "../common/Button";
 
+/**
+ * Universal Krisp Footer with certifications, social links, navigation categories, and global CTA.
+ */
 export default function Footer() {
-  const { logo, socials, columns, copyright, address, actions } = footerModel;
+  const { logo, socials, columns, copyright, address, actions } = footerData;
 
   return (
     <footer className="bg-[#f4f4f5] pt-16 md:pt-24 pb-12 text-[#131032]">
-      <div className="krisp-container">
+      <div className="w-[calc(100%-48px)] max-w-[1366px] mx-auto">
         {/* Awards Row */}
         <AwardsSection />
 

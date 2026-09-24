@@ -1,8 +1,8 @@
 import React from "react";
-import { footerModel } from "../../models/footerModel";
+import { footerData } from "../../utils/constants";
 
 export default function AwardsSection() {
-  const { awards } = footerModel;
+  const { awards } = footerData;
 
   return (
     <div className="pb-10 mb-10 border-b border-[#c6c6cd]">

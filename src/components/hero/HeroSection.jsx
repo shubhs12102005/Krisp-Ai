@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { navigationModel } from "../../models/navigationModel";
+import { navigationData } from "../../utils/navigationData";
 
 export default function HeroSection() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -51,7 +51,7 @@ export default function HeroSection() {
 
               {dropdownOpen && (
                 <div className="absolute left-0 top-[56px] w-[290px] bg-white rounded-[16px] p-2 header-dropdown-menu z-40 shadow-xl border border-[#f4f4f5]">
-                  {navigationModel.actions.getKrispDropdown.map((drop) => (
+                  {navigationData.actions.getKrispDropdown.map((drop) => (
                     <a
                       key={drop.id}
                       href={drop.href}

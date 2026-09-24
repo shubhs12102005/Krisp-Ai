@@ -1,9 +1,9 @@
 import React from "react";
-import { featureModel } from "../../models/featureModel";
+import { workflowData } from "../../utils/constants";
 import Button from "../common/Button";
 
 export default function WorkflowSection() {
-  const { title, items } = featureModel.workflow;
+  const { title, items } = workflowData;
 
   return (
     <section id="workflow" className="bg-[#f2ece2] py-24 md:py-32">

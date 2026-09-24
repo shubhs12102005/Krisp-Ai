@@ -1,9 +1,9 @@
 import React from "react";
-import { featureModel } from "../../models/featureModel";
+import { privacyData } from "../../utils/constants";
 
 export default function PrivacySection() {
   const { title, titleHighlight, desc, trustLink, trustText, items } =
-    featureModel.privacy;
+    privacyData;
 
   return (
     <section id="privacy" className="py-24 md:py-32 bg-white border-b border-[#f4f4f5]">

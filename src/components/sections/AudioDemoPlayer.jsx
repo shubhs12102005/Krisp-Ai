@@ -1,5 +1,5 @@
 import React from "react";
-import { useAudioDemoController } from "../../controllers/interactionController";
+import { useAudioDemo } from "../../hooks/useAudioDemo";
 
 export default function AudioDemoPlayer({ demoConfig, defaultTrack = "remote-work", isAccent = false }) {
   const {
@@ -11,7 +11,7 @@ export default function AudioDemoPlayer({ demoConfig, defaultTrack = "remote-wor
     toggleNoiseSuppression,
     progress,
     handleSeek
-  } = useAudioDemoController(defaultTrack);
+  } = useAudioDemo(defaultTrack);
 
   return (
     <div className="bg-[#2a216b] p-6 md:p-8 rounded-[20px] shadow-2xl w-full max-w-[800px] mx-auto text-left">
