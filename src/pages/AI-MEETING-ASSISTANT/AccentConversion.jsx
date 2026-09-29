@@ -48,7 +48,7 @@ export default function AccentConversion() {
             Krisp's breakthrough on-device AI transforms accents in real-time, helping international colleagues understand and be understood effortlessly.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://app.krisp.ai/sign-up" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/signup" className="h-[48px] px-8 text-[15px]">
               Try Accent AI Free
             </Button>
             <Button variant="outline" href="/contact-sales" className="h-[48px] px-8 text-[15px]">

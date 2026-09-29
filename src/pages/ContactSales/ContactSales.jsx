@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "../../components/common/Button";
 
 /**
  * Contact Sales & Book a Demo Page.
@@ -29,7 +28,7 @@ export default function ContactSales() {
           <div className="text-center max-w-[650px] mx-auto mb-10">
             <div className="flex justify-center mb-4">
               <img
-                src="/silgate-logo.jpg"
+                src="/silgate-logo-latest.png"
                 alt="Silgate Solutions"
                 className="h-[52px] w-auto object-contain mix-blend-multiply"
               />

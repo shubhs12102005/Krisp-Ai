@@ -60,7 +60,7 @@ export default function CompareTranslationAPI() {
             See how Krisp's sub-second streaming voice translation API compares against major cloud hyperscalers and legacy speech-to-speech providers.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://trust.krisp.ai" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/contact-sales" className="h-[48px] px-8 text-[15px]">
               Run Live Benchmark
             </Button>
             <Button variant="outline" href="/contact-sales" className="h-[48px] px-8 text-[15px]">

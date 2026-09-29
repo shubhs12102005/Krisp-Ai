@@ -121,12 +121,12 @@ export default function Navbar() {
 
           {/* Right Header Actions */}
           <div className="hidden lg:flex items-center gap-4">
-            <a
-              href={navigationData.actions.signIn.href}
-              className="text-[14px] font-semibold text-[#1a1a22] hover:underline"
+            <Link
+              to={navigationData.actions.signIn.href}
+              className="text-[14px] font-semibold text-[#1a1a22] hover:text-[#614efa] transition-colors"
             >
               {navigationData.actions.signIn.text}
-            </a>
+            </Link>
 
             <div className="w-[1px] h-[26px] bg-[#e7e7ea]"></div>
 

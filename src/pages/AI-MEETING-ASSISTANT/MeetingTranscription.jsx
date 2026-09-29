@@ -52,7 +52,7 @@ export default function MeetingTranscription() {
             Experience the world's most accurate meeting transcripts. By canceling background distractions at the audio layer, Krisp delivers unmatched accuracy across any call.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://app.krisp.ai/sign-up" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/signup" className="h-[48px] px-8 text-[15px]">
               Transcribe Free
             </Button>
             <Button variant="outline" href="/contact-sales" className="h-[48px] px-8 text-[15px]">

@@ -139,8 +139,7 @@ export default function WorkflowSection() {
         <div className="text-center">
           <Button
             variant="dark"
-            href="https://app.krisp.ai/sign-up"
-            external
+            href="/signup"
             className="h-[50px] px-8 rounded-[12px] text-[15px]"
           >
             Get Krisp for free

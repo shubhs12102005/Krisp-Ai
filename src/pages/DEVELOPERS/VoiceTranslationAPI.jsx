@@ -45,7 +45,7 @@ export default function VoiceTranslationAPI() {
             Build multilingual voice experiences. Stream live speech into our API and receive natural, speaker-attributed translated voice audio in real time.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://trust.krisp.ai" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/contact-sales" className="h-[48px] px-8 text-[15px]">
               Get Free API Key
             </Button>
             <Button variant="outline" href="/contact-sales" className="h-[48px] px-8 text-[15px]">

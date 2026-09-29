@@ -1,7 +1,7 @@
 // Global constants, site metadata, and feature data for Krisp AI replica
 
 export const siteLogos = {
-  main: "/silgate-logo.jpg",
+  main: "/silgate-logo-latest.png",
   arrowIcon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs//home/icon_arrow.svg",
   arrowDownIcon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_arrow_down.svg",
   ctaPointer: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_cta_pointer.svg"
@@ -358,7 +358,7 @@ export const footerData = {
     ]
   },
   logo: {
-    src: "/silgate-logo.jpg",
+    src: "/silgate-logo-latest.png",
     alt: "Silgate Solutions logo",
     href: "/"
   },
@@ -413,19 +413,19 @@ export const footerData = {
         { text: "Customers", href: "/customers" },
         { text: "Pricing", href: "/pricing" },
         { text: "Book a Demo", href: "/contact-sales" },
-        { text: "Careers", href: "https://krisp.ai/careers/" },
-        { text: "Blog", href: "https://krisp.ai/blog/" },
-        { text: "Help Center", href: "https://help.krisp.ai/hc/en-us" }
+        { text: "Careers", href: "/contact-sales" },
+        { text: "Blog", href: "/customers" },
+        { text: "Help Center", href: "/contact-sales" }
       ]
     },
     {
       title: "Trust & Legal",
       links: [
-        { text: "Security Center", href: "https://trust.krisp.ai" },
-        { text: "Terms of Use", href: "https://krisp.ai/terms-of-use/" },
-        { text: "Privacy Policy", href: "https://krisp.ai/privacy-policy/" },
-        { text: "Accessibility", href: "https://krisp.ai/accessibility-commitment/" },
-        { text: "Cookie Policy", href: "https://krisp.ai/cookie-policy/" }
+        { text: "Security Center", href: "/contact-sales" },
+        { text: "Terms of Use", href: "/pricing" },
+        { text: "Privacy Policy", href: "/pricing" },
+        { text: "Accessibility", href: "/pricing" },
+        { text: "Cookie Policy", href: "/pricing" }
       ]
     }
   ],
@@ -435,6 +435,6 @@ export const footerData = {
   phone: "+91 81088 10916",
   actions: [
     { text: "Book a demo", href: "/contact-sales", isPrimary: true },
-    { text: "Get Krisp for free", href: "https://app.krisp.ai/sign-up", isDark: true }
+    { text: "Get Krisp for free", href: "/signup", isDark: true }
   ]
 };

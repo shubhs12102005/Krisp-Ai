@@ -215,7 +215,7 @@ export const navigationData = {
   actions: {
     signIn: {
       text: "Sign in",
-      href: "https://app.krisp.ai/login"
+      href: "/signin"
     },
     bookDemo: {
       text: "Book a demo",

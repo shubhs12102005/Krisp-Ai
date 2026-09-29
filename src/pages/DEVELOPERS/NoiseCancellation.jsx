@@ -45,7 +45,7 @@ export default function NoiseCancellation() {
             The same award-winning noise suppression technology trusted by Discord, HP, and leading global telecommunication providers, available as a lightweight SDK.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://trust.krisp.ai" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/contact-sales" className="h-[48px] px-8 text-[15px]">
               Start Free SDK Trial
             </Button>
             <Button variant="outline" href="/contact-sales" className="h-[48px] px-8 text-[15px]">

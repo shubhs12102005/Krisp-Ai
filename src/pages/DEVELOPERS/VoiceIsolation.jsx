@@ -45,7 +45,7 @@ export default function VoiceIsolation() {
             Isolate the primary speaker’s voice from background noise and neighboring voices in real-time. The missing audio frontend for Voice AI agents.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://trust.krisp.ai" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/contact-sales" className="h-[48px] px-8 text-[15px]">
               Request VIVA 2.5 SDK
             </Button>
             <Button variant="outline" href="/contact-sales" className="h-[48px] px-8 text-[15px]">

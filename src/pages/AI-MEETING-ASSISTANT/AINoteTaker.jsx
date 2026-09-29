@@ -56,7 +56,7 @@ export default function AINoteTaker() {
             Focus entirely on the conversation. Krisp silently takes perfect meeting notes, highlights decisions, and assigns follow-ups without any awkward bots joining.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://app.krisp.ai/sign-up" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/signup" className="h-[48px] px-8 text-[15px]">
               Start Taking Notes Free
             </Button>
             <Button variant="outline" href="/contact-sales" className="h-[48px] px-8 text-[15px]">

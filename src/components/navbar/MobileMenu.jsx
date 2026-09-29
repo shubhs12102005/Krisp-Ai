@@ -76,12 +76,19 @@ export default function MobileMenu({
               </Button>
               <Button
                 variant="primary"
-                href="https://app.krisp.ai/sign-up"
-                external
+                href="/signup"
+                onClick={onClose}
                 className="w-full text-center"
               >
                 Get Krisp for free
               </Button>
+              <Link
+                to="/signin"
+                onClick={onClose}
+                className="block text-center text-[15px] font-bold text-[#1a1a22] hover:text-[#614efa] py-2 transition-colors"
+              >
+                Sign in
+              </Link>
 
               <div className="pt-6 border-t border-[#f4f4f5] flex justify-center gap-4">
                 <a

@@ -37,6 +37,12 @@ import Customers from "./pages/CUSTOMERS/Customers";
 import Pricing from "./pages/PRICING/Pricing";
 import ContactSales from "./pages/ContactSales/ContactSales";
 
+// Auth Independent Pages (Local Krisp Auth Replacements)
+import SignIn from "./pages/AUTH/SignIn";
+import SignUp from "./pages/AUTH/SignUp";
+import ForgotPassword from "./pages/AUTH/ForgotPassword";
+import ResetPassword from "./pages/AUTH/ResetPassword";
+
 // Scroll restoration helper
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -55,6 +61,14 @@ export default function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
+        {/* Authentication Routes - Standalone Authentic Krisp Auth Layout */}
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/login" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+
         <Route element={<MainLayout />}>
           {/* Main Home Route */}
           <Route path="/" element={<Home />} />

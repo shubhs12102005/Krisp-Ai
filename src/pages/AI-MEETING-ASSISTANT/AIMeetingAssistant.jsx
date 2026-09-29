@@ -49,7 +49,7 @@ export default function AIMeetingAssistant() {
             Effortlessly capture transcripts, concise summaries, and follow-up action items across all conferencing tools without any bots.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://app.krisp.ai/sign-up" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/signup" className="h-[48px] px-8 text-[15px]">
               Get Started for Free
             </Button>
             <Button variant="outline" href="/contact-sales" className="h-[48px] px-8 text-[15px]">

@@ -102,7 +102,7 @@ export default function Customers() {
         <ReviewsSection />
 
         <div className="text-center mt-16">
-          <Button variant="primary" href="https://app.krisp.ai/sign-up" external className="h-[48px] px-8 text-[15px]">
+          <Button variant="primary" href="/signup" className="h-[48px] px-8 text-[15px]">
             Join over 200,000+ teams on Krisp
           </Button>
         </div>

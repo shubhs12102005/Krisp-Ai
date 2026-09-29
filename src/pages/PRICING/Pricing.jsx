@@ -23,7 +23,7 @@ export default function Pricing() {
         "Standard audio quality"
       ],
       ctaText: "Get Started Free",
-      ctaHref: "https://app.krisp.ai/sign-up",
+      ctaHref: "/signup",
       highlight: false
     },
     {
@@ -41,7 +41,7 @@ export default function Pricing() {
         "Speaker diarization"
       ],
       ctaText: "Try Free for 7 Days",
-      ctaHref: "https://app.krisp.ai/sign-up",
+      ctaHref: "/signup",
       highlight: true
     },
     {

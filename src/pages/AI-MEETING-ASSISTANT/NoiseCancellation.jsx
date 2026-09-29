@@ -49,7 +49,7 @@ export default function NoiseCancellation() {
             Krisp removes background chatter, barking dogs, loud typing, and room echo from your meetings on Zoom, Google Meet, Teams, and Slack.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://app.krisp.ai/sign-up" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/signup" className="h-[48px] px-8 text-[15px]">
               Try Free Noise Cancellation
             </Button>
             <Button variant="outline" href="/pricing" className="h-[48px] px-8 text-[15px]">

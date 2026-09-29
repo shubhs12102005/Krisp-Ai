@@ -66,7 +66,7 @@ export default function Developers() {
             Integrate world-class voice isolation, turn-taking, and noise suppression directly into your apps and AI voice agents with sub-15ms latency.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://trust.krisp.ai" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/contact-sales" className="h-[48px] px-8 text-[15px]">
               Request SDK Trial
             </Button>
             <Button variant="outline" href="/contact-sales" className="h-[48px] px-8 text-[15px]">

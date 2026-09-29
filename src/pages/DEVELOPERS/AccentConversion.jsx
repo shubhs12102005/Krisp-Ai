@@ -45,7 +45,7 @@ export default function AccentConversion() {
             Empower your communication platforms, VoIP softphones, and collaborative games with real-time accent neutralization models via native C++ and WebRTC bindings.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://trust.krisp.ai" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/contact-sales" className="h-[48px] px-8 text-[15px]">
               Request SDK Evaluation Key
             </Button>
             <Button variant="outline" href="/contact-sales" className="h-[48px] px-8 text-[15px]">

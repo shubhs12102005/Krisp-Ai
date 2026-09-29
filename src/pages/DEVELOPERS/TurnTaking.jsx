@@ -45,7 +45,7 @@ export default function TurnTaking() {
             Solve speech overlap, awkward bot hesitation, and false barge-in triggers with Krisp’s turn-taking acoustic intelligence engine.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://trust.krisp.ai" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/contact-sales" className="h-[48px] px-8 text-[15px]">
               Access Turn-Taking SDK
             </Button>
             <Button variant="outline" href="/contact-sales" className="h-[48px] px-8 text-[15px]">

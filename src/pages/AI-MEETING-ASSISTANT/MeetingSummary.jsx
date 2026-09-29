@@ -47,7 +47,7 @@ export default function MeetingSummary() {
             Skip writing lengthy meeting recaps. Krisp turns raw transcripts into polished executive summaries and syncs action items to your favorite workspace tools.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" href="https://app.krisp.ai/sign-up" external className="h-[48px] px-8 text-[15px]">
+            <Button variant="primary" href="/signup" className="h-[48px] px-8 text-[15px]">
               Generate Summaries Free
             </Button>
             <Button variant="outline" href="/contact-sales" className="h-[48px] px-8 text-[15px]">
