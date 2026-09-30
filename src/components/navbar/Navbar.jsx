@@ -140,7 +140,7 @@ export default function Navbar() {
                 onClick={() => setGetKrispDropdownOpen((prev) => !prev)}
                 className="inline-flex items-center gap-2 bg-[#614efa] hover:bg-[#4a3bbe] text-white text-[14px] font-bold h-[44px] px-4 rounded-[10px] transition-colors cursor-pointer"
               >
-                <span>Get Krisp</span>
+                <span>Get Silgate</span>
                 <img
                   src={siteLogos.arrowDownIcon}
                   alt="Arrow"

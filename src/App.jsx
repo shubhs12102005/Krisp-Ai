@@ -11,6 +11,8 @@ import AINoteTaker from "./pages/AI-MEETING-ASSISTANT/AINoteTaker";
 import MeetingTranscription from "./pages/AI-MEETING-ASSISTANT/MeetingTranscription";
 import MeetingRecording from "./pages/AI-MEETING-ASSISTANT/MeetingRecording";
 import MeetingSummary from "./pages/AI-MEETING-ASSISTANT/MeetingSummary";
+import MeetingMinutes from "./pages/AI-MEETING-ASSISTANT/MeetingMinutes";
+import AudioVideoToTextConverter from "./pages/AI-MEETING-ASSISTANT/AudioVideoToTextConverter";
 import AIMeetingNoiseCancellation from "./pages/AI-MEETING-ASSISTANT/NoiseCancellation";
 import AIMeetingAccentConversion from "./pages/AI-MEETING-ASSISTANT/AccentConversion";
 
@@ -96,28 +98,44 @@ export default function App() {
           <Route path="/meeting-recording" element={<MeetingRecording />} />
           <Route path="/ai-meeting-assistant/meeting-summary" element={<MeetingSummary />} />
           <Route path="/ai-meeting-summary" element={<MeetingSummary />} />
+          <Route path="/ai-meeting-assistant/meeting-minutes" element={<MeetingMinutes />} />
+          <Route path="/meeting-minutes" element={<MeetingMinutes />} />
+          <Route path="/ai-meeting-minutes" element={<MeetingMinutes />} />
+          <Route path="/ai-meeting-assistant/audio-video-to-text-converter" element={<AudioVideoToTextConverter />} />
+          <Route path="/audio-video-to-text-converter" element={<AudioVideoToTextConverter />} />
+          <Route path="/video-and-audio-to-text-transcription" element={<AudioVideoToTextConverter />} />
+          <Route path="/ai-meeting-assistant/audio-video-to-text" element={<AudioVideoToTextConverter />} />
+          <Route path="/audio-video-to-text" element={<AudioVideoToTextConverter />} />
           <Route path="/ai-meeting-assistant/noise-cancellation" element={<AIMeetingNoiseCancellation />} />
           <Route path="/noise-cancellation" element={<AIMeetingNoiseCancellation />} />
           <Route path="/ai-meeting-assistant/accent-conversion" element={<AIMeetingAccentConversion />} />
           <Route path="/ai-accent-conversion" element={<AIMeetingAccentConversion />} />
+          <Route path="/accent-conversion" element={<AIMeetingAccentConversion />} />
 
           {/* Call Center AI Routes */}
           <Route path="/call-center-ai" element={<CallCenterAI />} />
           <Route path="/contact-center" element={<CallCenterAI />} />
+          <Route path="/call-center" element={<CallCenterAI />} />
           <Route path="/call-center-ai/noise-cancellation" element={<CallCenterNoiseCancellation />} />
           <Route path="/contact-center/noise-cancellation" element={<CallCenterNoiseCancellation />} />
+          <Route path="/call-center/noise-cancellation" element={<CallCenterNoiseCancellation />} />
           <Route path="/call-center-ai/accent-conversion" element={<CallCenterAccentConversion />} />
           <Route path="/contact-center/accent-conversion" element={<CallCenterAccentConversion />} />
+          <Route path="/call-center/accent-conversion" element={<CallCenterAccentConversion />} />
           <Route path="/call-center-ai/voice-translation" element={<CallCenterVoiceTranslation />} />
           <Route path="/contact-center/voice-translation" element={<CallCenterVoiceTranslation />} />
+          <Route path="/call-center/voice-translation" element={<CallCenterVoiceTranslation />} />
           <Route path="/ai-voice-translation" element={<CallCenterVoiceTranslation />} />
           <Route path="/call-center-ai/agent-assist" element={<CallCenterAgentAssist />} />
           <Route path="/contact-center/agent-assist" element={<CallCenterAgentAssist />} />
           <Route path="/contact-center/ai-agent-assist" element={<CallCenterAgentAssist />} />
+          <Route path="/call-center/agent-assist" element={<CallCenterAgentAssist />} />
           <Route path="/call-center-ai/speech-analytics" element={<CallCenterSpeechAnalytics />} />
           <Route path="/contact-center/speech-analytics" element={<CallCenterSpeechAnalytics />} />
+          <Route path="/call-center/speech-analytics" element={<CallCenterSpeechAnalytics />} />
           <Route path="/call-center-ai/voice-security" element={<CallCenterVoiceSecurity />} />
           <Route path="/contact-center/voice-security" element={<CallCenterVoiceSecurity />} />
+          <Route path="/call-center/voice-security" element={<CallCenterVoiceSecurity />} />
 
           {/* Developers Routes */}
           <Route path="/developers" element={<Developers />} />
@@ -167,9 +185,16 @@ export default function App() {
 
           {/* Trust Pages */}
           <Route path="/security" element={<Security />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/security/" element={<Security />} />
+          <Route path="/terms-of-use" element={<TermsOfUse />} />
+          <Route path="/terms-of-use/" element={<TermsOfUse />} />
           <Route path="/terms" element={<TermsOfUse />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
           <Route path="/accessibility" element={<Accessibility />} />
+          <Route path="/accessibility/" element={<Accessibility />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
+          <Route path="/cookie-policy/" element={<CookiePolicy />} />
           <Route path="/cookie" element={<CookiePolicy />} />
 
           {/* Catch-all fallback */}

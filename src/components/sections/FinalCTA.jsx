@@ -21,7 +21,7 @@ export default function FinalCTA() {
             href="/signup"
             className="h-[52px] px-8 text-[16px] rounded-[12px] shadow-lg"
           >
-            Get Krisp for free
+            Get Silgate for free
           </Button>
         </div>
       </div>

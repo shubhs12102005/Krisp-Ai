@@ -39,7 +39,7 @@ export default function HeroSection() {
                 onClick={() => setDropdownOpen((prev) => !prev)}
                 className="inline-flex items-center gap-2 bg-[#614efa] hover:bg-[#4a3bbe] text-white text-[16px] font-bold h-[48px] px-6 rounded-[10px] transition-colors cursor-pointer shadow-md"
               >
-                <span>Get Krisp</span>
+                <span>Get Silgate</span>
                 <img
                   src="https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_arrow_down.svg"
                   alt="Arrow"
@@ -99,7 +99,7 @@ export default function HeroSection() {
             {/* Mobile Hero Fallback Image */}
             <img
               src="https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/img_hero_mobile.png"
-              alt="Krisp AI Meeting Assistant"
+              alt="Silgate AI Meeting Assistant"
               className="w-full h-auto block md:hidden rounded-xl shadow-md"
             />
           </div>

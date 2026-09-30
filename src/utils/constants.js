@@ -1,4 +1,4 @@
-// Global constants, site metadata, and feature data for Krisp AI replica
+// Global constants, site metadata, and feature data for the Silgate Solutions marketing site
 
 export const siteLogos = {
   main: "/silgate-logo-latest.png",
@@ -22,7 +22,7 @@ export const trustedLogos = [
 ];
 
 export const testimonialData = {
-  quote: "Krisp's noise cancellation transformed our remote meetings. The new AI assistant features impressed us by streamlining note-taking, saving time during our 5–6 weekly calls, and boosting overall efficiency.",
+  quote: "Silgate's voice AI transformed our remote meetings. The noise cancellation and AI notes saved our team time, made follow-ups faster, and improved call clarity across every conversation.",
   author: {
     name: "Esther Trapadoux",
     role: "Director of Community, Amplitude",
@@ -34,8 +34,8 @@ export const testimonialData = {
 export const audioDemos = {
   noise: {
     title: "AI Noise Cancellation",
-    subtitle: "Play and toggle Krisp on and off",
-    switchLabel: "With Krisp Noise Cancellation",
+    subtitle: "Play and toggle Silgate on and off",
+    switchLabel: "With Silgate Noise Cancellation",
     listTitle: "Try out different noise types",
     tracks: [
       { id: "remote-work", name: "Multiple noises" },
@@ -47,8 +47,8 @@ export const audioDemos = {
   },
   accent: {
     title: "Accent Conversion",
-    subtitle: "Play and toggle Krisp on and off",
-    switchLabel: "With Krisp AI Accent Conversion",
+    subtitle: "Play and toggle Silgate on and off",
+    switchLabel: "With Silgate AI Accent Conversion",
     listTitle: "Try out different output voices",
     tracks: [
       { id: "manoj", name: "Manoj", avatar: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/accent_sherwin.png" },
@@ -68,7 +68,7 @@ export const meetingSections = [
       {
         id: "transcripts-recording",
         title: "Transcription & Recording",
-        desc: "Krisp’s AI meeting assistant silently handles transcripts and recordings.",
+        desc: "Silgate's AI meeting assistant handles transcripts and recordings without interrupting the conversation.",
         link: "/ai-meeting-assistant/meeting-transcription",
         video: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/video_transcription.mp4"
       },
@@ -181,11 +181,11 @@ export const workflowData = {
       videoTablet: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/video_recording_tablet.mp4"
     },
     {
-      id: "ask-krisp",
+      id: "ask-silgate",
       widthDesktop: "624px",
       icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/icon_ai.svg",
-      title: "Ask Krisp",
-      desc: "You don’t need to copy and paste transcript to chatGPT if templates we have are not enough. Ask anything right here!",
+      title: "Ask Silgate",
+      desc: "You don’t need to copy and paste transcripts into a separate tool when your AI assistant can answer right here.",
       videoDesktop: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/video_ask_krisp.mp4",
       videoTablet: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/video_ask_krisp_tablet.mp4"
     }
@@ -196,7 +196,7 @@ export const workspacesData = {
   eyebrow: "Store. Organize. Act On.",
   title: "Workspaces",
   subtitle: "Unlock knowledge buried in team conversations.",
-  content: "From pre-meeting briefs and agendas to follow-ups, everything is organized for quick reference. With integrations to productivity tools and flexible pricing, Krisp scales with teams of all sizes.",
+  content: "From pre-meeting briefs and agendas to follow-ups, everything is organized for quick reference. With integrations to productivity tools and flexible pricing, Silgate scales with teams of all sizes.",
   buttonText: "Book a demo",
   buttonHref: "/contact-sales",
   video: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/video_workspaces.mp4"
@@ -290,40 +290,40 @@ export const featuresBlockData = [
 
 export const faqsData = [
   {
-    question: "What is Krisp, and how are its products connected?",
-    answer: `Krisp is a Voice AI platform that makes conversations clearer and more productive. All products run on the same AI voice engine to remove background noise, convert accents, and generate real-time transcripts and notes. Products are separate and installed individually.
+    question: "What is Silgate, and how are its products connected?",
+    answer: `Silgate is a Voice AI platform built to make conversations clearer, faster, and more productive. All products run on the same AI voice engine for noise suppression, accent adaptation, and real-time transcription and summaries. Products are designed to be installed individually based on team needs.
 
-• AI Meeting Assistant — A bot-free AI note taker for professionals and teams who want transcription and note-taking across Zoom, Microsoft Teams, Google Meet, Slack Huddles, and more.
-• Call Center AI — for contact centers that need clarity and real-time agent support, including Accent Conversion, Voice Translation, Noise Cancellation, and Agent Assist.
-• AI Voice SDK — for developers embedding Krisp’s Voice AI features such as Noise Cancellation, Accent Conversion, and Voice Isolation directly into their apps.
+• AI Meeting Assistant — A bot-free AI note taker for teams that want transcription, summaries, and action items across Zoom, Microsoft Teams, Google Meet, Slack Huddles, and more.
+• Call Center AI — For contact centers that need clearer calls and real-time agent support, including Accent Conversion, Voice Translation, Noise Cancellation, and Agent Assist.
+• Voice AI SDK — For developers embedding Silgate's voice capabilities such as Noise Cancellation, Accent Conversion, and Voice Isolation directly into their apps.
 
-All three share the same foundation, but installing one (for example, the AI Meeting Assistant) does not include the others.`
+All three share the same foundation, but installing one does not automatically include the others.`
   },
   {
-    question: "Does Krisp integrate with Zoom, Google Meet, Microsoft Teams, and Slack?",
-    answer: "Yes. Because Krisp works at the audio level, it integrates with every conferencing app such as Zoom, Google Meet, Microsoft Teams, Slack Huddles, and more."
+    question: "Does Silgate integrate with Zoom, Google Meet, Microsoft Teams, and Slack?",
+    answer: "Yes. Because Silgate works at the audio layer, it integrates with most conferencing and collaboration tools such as Zoom, Google Meet, Microsoft Teams, Slack Huddles, and more."
   },
   {
-    question: "How accurate is Krisp transcription, and what affects quality?",
-    answer: `Krisp transcription is tuned for real-world meetings. Accuracy remains high even in noisy environments thanks to our Noise Cancellation. Quality depends mostly on the speaker’s clarity and microphone, but because we filter out background distractions first, you will often see better results with Krisp than with standalone transcription tools.
+    question: "How accurate is Silgate transcription, and what affects quality?",
+    answer: `Silgate transcription is tuned for real-world meetings. Accuracy remains high even in noisy environments thanks to our noise cancellation. Quality depends on speaker clarity and microphone quality, but by filtering out background distractions first, you often get stronger results than with standalone transcription tools.
 
-To make transcripts even more relevant, Krisp supports Custom Vocabulary with up to 750 words. This allows you to tailor transcription to your company or industry-specific language, ensuring names, acronyms, and technical terms are captured correctly.`
+To make transcripts more relevant, Silgate supports custom vocabulary and domain-specific terminology so names, acronyms, and technical terms are captured correctly.`
   },
   {
-    question: "Which languages Krisp supports for transcription?",
-    answer: "Krisp supports on-device English transcription for maximum privacy and speed, plus server-based transcription in 15 additional languages including Spanish, French, German, Russian, Italian, Dutch, Polish, Portuguese, Hindi, Danish, Swedish, Norwegian, Czech, Ukrainian, and Korean. We continue to expand this list."
+    question: "Which languages does Silgate support for transcription?",
+    answer: "Silgate supports high-quality English transcription for privacy-first, low-latency workflows and expands into additional languages for teams operating across regions and markets. We continue to add coverage as customer needs evolve."
   },
   {
-    question: "Is there a Krisp mobile app, and what features does it include?",
-    answer: "Yes. The Krisp mobile app is built for on-the-go meetings. You can record and transcribe in-person conversations, capture hybrid sessions, or upload audio files for transcription. It works offline too. Today, mobile app does not include Noise Cancellation, but it is coming."
+    question: "Is there a Silgate mobile app, and what features does it include?",
+    answer: "Yes. The Silgate mobile app is built for on-the-go meetings and in-person discussions. You can record and transcribe conversations, capture hybrid sessions, and upload audio files for transcription when needed."
   },
   {
-    question: "Does Krisp support in-person, hybrid, and online meetings?",
-    answer: "Yes. Krisp covers all meeting types. Use the desktop app for online calls and for recording in-person meetings, the mobile app for on-the-go or offline discussions, and the same platform to handle hybrid situations. With Krisp Meeting Note Taker every conversation can be captured, transcribed, and summarized in one place."
+    question: "Does Silgate support in-person, hybrid, and online meetings?",
+    answer: "Yes. Silgate supports all meeting formats. Use desktop workflows for online and hybrid sessions, and mobile or recording workflows for walk-and-talk conversations and in-person meetings."
   },
   {
-    question: "Is Krisp only a noise-canceling app?",
-    answer: "No—noise cancellation is still core, but it’s not the only thing Krisp does. Krisp combines #1 noise cancellation with an AI Note Taker and Accent AI for clear, productive meetings."
+    question: "Is Silgate only a noise-canceling app?",
+    answer: "No—noise cancellation is still core, but it’s not the only thing Silgate does. Silgate combines clear audio processing with AI note capture, accent assist, voice translation, and workflow automation to support better communication."
   }
 ];
 
@@ -363,10 +363,10 @@ export const footerData = {
     href: "/"
   },
   socials: [
-    { name: "Facebook", href: "https://www.facebook.com/krispHQ/", icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/logo_facebook.svg" },
-    { name: "LinkedIn", href: "https://www.linkedin.com/company/krisphq/", icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/logo_linkedin.svg" },
-    { name: "YouTube", href: "https://www.youtube.com/channel/UCAMZinJdR9P33fZUNpuxXtg", icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/logo_youtube.svg" },
-    { name: "X", href: "https://x.com/krispHQ", icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/logo_x.svg" }
+    { name: "Facebook", href: "https://www.facebook.com", icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/logo_facebook.svg" },
+    { name: "LinkedIn", href: "https://www.linkedin.com", icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/logo_linkedin.svg" },
+    { name: "YouTube", href: "https://www.youtube.com", icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/logo_youtube.svg" },
+    { name: "X", href: "https://x.com", icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/home/logo_x.svg" }
   ],
   columns: [
     {
@@ -378,8 +378,8 @@ export const footerData = {
         { text: "Meeting Transcription", href: "/ai-meeting-assistant/meeting-transcription" },
         { text: "Meeting Note Taker", href: "/ai-meeting-assistant/ai-note-taker" },
         { text: "Meeting Recording", href: "/ai-meeting-assistant/meeting-recording" },
-        { text: "Meeting Minutes", href: "/ai-meeting-assistant/meeting-summary" },
-        { text: "Audio/Video to Text Convertor", href: "/ai-meeting-assistant/meeting-summary" }
+        { text: "Meeting Minutes", href: "/meeting-minutes" },
+        { text: "Audio/Video to Text Convertor", href: "/video-and-audio-to-text-transcription" }
       ]
     },
     {
@@ -419,10 +419,10 @@ export const footerData = {
       title: "Trust & Legal",
       links: [
         { text: "Security", href: "/security" },
-        { text: "Terms of Use", href: "/terms" },
+        { text: "Terms of Use", href: "/terms-of-use" },
         { text: "Privacy Policy", href: "/privacy-policy" },
         { text: "Accessibility", href: "/accessibility" },
-        { text: "Cookie Policy", href: "/cookie" }
+        { text: "Cookie Policy", href: "/cookie-policy" }
       ]
     }
   ],
@@ -432,6 +432,6 @@ export const footerData = {
   phone: "+91 81088 10916",
   actions: [
     { text: "Book a demo", href: "/contact-sales", isPrimary: true },
-    { text: "Get Krisp for free", href: "/signup", isDark: true }
+    { text: "Get Silgate for free", href: "/signup", isDark: true }
   ]
 };

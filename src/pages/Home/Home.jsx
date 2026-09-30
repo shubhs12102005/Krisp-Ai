@@ -15,9 +15,9 @@ import VideoBanner from "../../components/sections/VideoBanner";
 import FinalCTA from "../../components/sections/FinalCTA";
 
 /**
- * Krisp.ai Main Homepage Component.
- * Faithfully reproduces the live Krisp homepage layout, side-by-side hero,
- * live audio demo players, workflow grid, workspaces banner, and security badges.
+ * Silgate Solutions homepage component.
+ * Reuses the reference layout for the hero, product workflow, workspaces,
+ * demo panels, and trust sections while presenting the Silgate brand.
  */
 export default function Home() {
   return (

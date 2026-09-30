@@ -279,7 +279,7 @@ export default function SignUp() {
                     <span>Creating your account...</span>
                   </>
                 ) : (
-                  <span>Get Krisp for Free</span>
+                  <span>Get Silgate for Free</span>
                 )}
               </button>
             </form>

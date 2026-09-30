@@ -80,7 +80,7 @@ export default function MobileMenu({
                 onClick={onClose}
                 className="w-full text-center"
               >
-                Get Krisp for free
+                Get Silgate for free
               </Button>
               <Link
                 to="/signin"

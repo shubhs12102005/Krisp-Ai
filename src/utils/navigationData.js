@@ -49,7 +49,19 @@ export const navigationData = {
             desc: "Instant summaries, next steps, and action items",
             href: "/ai-meeting-assistant/meeting-summary",
             icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_meeting_summary.svg"
-          }
+          },
+          {
+            title: "Meeting Minutes",
+            desc: "Structured AI meeting minutes that write themselves",
+            href: "/meeting-minutes",
+            icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_meeting_summary.svg"
+          },
+          // {
+          //   title: "Audio/Video to Text",
+          //   desc: "Convert audio and video recordings to text instantly",
+          //   href: "/video-and-audio-to-text-transcription",
+          //   icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_audio_to_text.svg"
+          // }
         ]
       },
       {

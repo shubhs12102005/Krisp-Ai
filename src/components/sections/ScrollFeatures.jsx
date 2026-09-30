@@ -175,16 +175,7 @@ export default function ScrollFeatures() {
           </div>
         </div>
 
-        {/* Section CTA */}
-        <div className="text-center mt-20">
-          <Button
-            variant="primary"
-            href="/signup"
-            className="h-[52px] px-8 text-[16px] rounded-[12px]"
-          >
-            Get Krisp for free
-          </Button>
-        </div>
+       
       </div>
     </section>
   );

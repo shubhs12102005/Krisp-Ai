@@ -142,7 +142,7 @@ export default function WorkflowSection() {
             href="/signup"
             className="h-[50px] px-8 rounded-[12px] text-[15px]"
           >
-            Get Krisp for free
+            Get Silgate for free
           </Button>
         </div>
       </div>
