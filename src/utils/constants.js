@@ -378,19 +378,19 @@ export const footerData = {
         { text: "Meeting Transcription", href: "/ai-meeting-assistant/meeting-transcription" },
         { text: "Meeting Note Taker", href: "/ai-meeting-assistant/ai-note-taker" },
         { text: "Meeting Recording", href: "/ai-meeting-assistant/meeting-recording" },
-        { text: "Meeting Minutes & Summary", href: "/ai-meeting-assistant/meeting-summary" }
+        { text: "Meeting Minutes", href: "/ai-meeting-assistant/meeting-summary" },
+        { text: "Audio/Video to Text Convertor", href: "/ai-meeting-assistant/meeting-summary" }
       ]
     },
     {
       title: "Call Center AI",
       href: "/call-center-ai",
       links: [
-        { text: "Call Center AI Platform", href: "/call-center-ai" },
-        { text: "Noise Cancellation", href: "/call-center-ai/noise-cancellation" },
-        { text: "Accent Conversion", href: "/call-center-ai/accent-conversion" },
         { text: "Voice Translation", href: "/call-center-ai/voice-translation" },
-        { text: "Agent Assist", href: "/call-center-ai/agent-assist" },
+        { text: "Accent Conversion", href: "/call-center-ai/accent-conversion" },
+        { text: "Noise Cancellation", href: "/call-center-ai/noise-cancellation" },
         { text: "Speech Analytics", href: "/call-center-ai/speech-analytics" },
+        { text: "Agent Assist", href: "/call-center-ai/agent-assist" },
         { text: "Voice Security", href: "/call-center-ai/voice-security" }
       ]
     },
@@ -398,34 +398,31 @@ export const footerData = {
       title: "Developers",
       href: "/developers",
       links: [
-        { text: "Voice Isolation (VIVA)", href: "/developers/voice-isolation" },
-        { text: "Turn-Taking AI", href: "/developers/turn-taking" },
+        { text: "Voice Isolation SDK", href: "/developers/voice-isolation" },
         { text: "Noise Cancellation SDK", href: "/developers/noise-cancellation" },
-        { text: "Accent Conversion SDK", href: "/developers/accent-conversion" },
         { text: "Voice Translation API", href: "/developers/voice-translation-api" },
-        { text: "Compare Translation APIs", href: "/developers/compare-translation-api" }
+        { text: "Accent Conversion SDK", href: "/developers/accent-conversion" },
       ]
     },
     {
       title: "Company",
       links: [
-        { text: "Contact Us", href: "/contact-sales" },
-        { text: "Customers", href: "/customers" },
-        { text: "Pricing", href: "/pricing" },
-        { text: "Book a Demo", href: "/contact-sales" },
-        { text: "Careers", href: "/contact-sales" },
-        { text: "Blog", href: "/customers" },
-        { text: "Help Center", href: "/contact-sales" }
+        { text: "About Us", href: "/about-us" },
+        { text: "Careers", href: "/careers" },
+        { text: "Blog", href: "/blog" },
+        { text: "Live Demo", href: "/live-demo" },
+        { text: "Help Center", href: "/help-center" },
+        { text: "Partner Program", href: "/partner-program" },
       ]
     },
     {
       title: "Trust & Legal",
       links: [
-        { text: "Security Center", href: "/contact-sales" },
-        { text: "Terms of Use", href: "/pricing" },
-        { text: "Privacy Policy", href: "/pricing" },
-        { text: "Accessibility", href: "/pricing" },
-        { text: "Cookie Policy", href: "/pricing" }
+        { text: "Security", href: "/security" },
+        { text: "Terms of Use", href: "/terms" },
+        { text: "Privacy Policy", href: "/privacy-policy" },
+        { text: "Accessibility", href: "/accessibility" },
+        { text: "Cookie Policy", href: "/cookie" }
       ]
     }
   ],

@@ -43,6 +43,19 @@ import SignUp from "./pages/AUTH/SignUp";
 import ForgotPassword from "./pages/AUTH/ForgotPassword";
 import ResetPassword from "./pages/AUTH/ResetPassword";
 
+// Company Pages
+import Aboutus from "./pages/Company/Aboutus";
+import Blog from "./pages/Company/Blog";
+import Careers from "./pages/Company/Careers";
+import Help_Center from "./pages/Company/Help_Center";
+import Live_demo from "./pages/Company/Livedemo";
+import Partner_Program from "./pages/Company/Partner_Program";
+import Security from "./pages/Trust/Security";
+import PrivacyPolicy from "./pages/Trust/PrivacyPolicy";
+import TermsOfUse from "./pages/Trust/TermsOfUse";
+import Accessibility from "./pages/Trust/Accessibility";
+import CookiePolicy from "./pages/Trust/CookiePolicy";
+
 // Scroll restoration helper
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -117,12 +130,47 @@ export default function App() {
           <Route path="/developers/compare-translation-api" element={<DevelopersCompareTranslationAPI />} />
           <Route path="/vt-comparison" element={<DevelopersCompareTranslationAPI />} />
 
-          {/* Customers & Pricing Routes */}
+          {/* Customers & Pricings Routes */}
           <Route path="/customers" element={<Customers />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact-sales" element={<ContactSales />} />
           <Route path="/contact" element={<ContactSales />} />
           <Route path="/contact-us" element={<ContactSales />} />
+          {/* Company Routes with Aliases */}
+          <Route path="/about-us" element={<Aboutus />} />
+          <Route path="/about" element={<Aboutus />} />
+          <Route path="/company/about" element={<Aboutus />} />
+          <Route path="/company/about-us" element={<Aboutus />} />
+
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/company/blog" element={<Blog />} />
+          <Route path="/company/posts" element={<Blog />} />
+
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/company/careers" element={<Careers />} />
+          <Route path="/jobs" element={<Careers />} />
+
+          <Route path="/help-center" element={<Help_Center />} />
+          <Route path="/help" element={<Help_Center />} />
+          <Route path="/company/help-center" element={<Help_Center />} />
+          <Route path="/hc/en-us" element={<Help_Center />} />
+
+          <Route path="/live-demo" element={<Live_demo />} />
+          <Route path="/company/live-demo" element={<Live_demo />} />
+          <Route path="/krisp-demo-all-products" element={<Live_demo />} />
+          <Route path="/demo" element={<Live_demo />} />
+
+          <Route path="/partner-program" element={<Partner_Program />} />
+          <Route path="/company/partner-program" element={<Partner_Program />} />
+          <Route path="/partners" element={<Partner_Program />} />
+          <Route path="/partner" element={<Partner_Program />} />
+
+          {/* Trust Pages */}
+          <Route path="/security" element={<Security />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfUse />} />
+          <Route path="/accessibility" element={<Accessibility />} />
+          <Route path="/cookie" element={<CookiePolicy />} />
 
           {/* Catch-all fallback */}
           <Route path="*" element={<Navigate to="/" replace />} />

@@ -62,8 +62,14 @@ export const navigationData = {
             icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_noise_cancellation.svg"
           },
           {
-            title: "Accent Conversion",
-            desc: "Speaker-side & listener-side accent conversion",
+            title: "Accent Conversion - Speaker Side",
+            desc: "Speaker-side accent conversion",
+            href: "/ai-meeting-assistant/accent-conversion",
+            icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_accent_conversion.svg"
+          },
+          {
+            title: "Accent Conversion - Listener Side",
+            desc: "Listener-side accent conversion",
             href: "/ai-meeting-assistant/accent-conversion",
             icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_accent_conversion.svg"
           }
@@ -151,7 +157,7 @@ export const navigationData = {
         groupTitle: "For Voice AI Agents",
         items: [
           {
-            title: "Voice Isolation (VIVA)",
+            title: "Voice Isolation",
             badge: "New",
             desc: "Isolate the primary speaker’s voice on-device",
             href: "/developers/voice-isolation",
@@ -162,6 +168,13 @@ export const navigationData = {
             desc: "Improve conversational turn-taking for Voice AI agents",
             href: "/developers/turn-taking",
             icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_echo_nav.svg"
+          },
+          {
+            title: "Voice Isolation Benchmark",
+            badge: "New",
+            desc: "Isolate the primary speaker’s voice on-device",
+            href: "/developers/voice-isolation",
+            icon: "https://krisp.ai/wp-content/themes/krisp-v4/imgs/icon_meeting_recording.svg"
           }
         ]
       },
